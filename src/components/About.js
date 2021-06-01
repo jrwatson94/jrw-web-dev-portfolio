@@ -2,8 +2,9 @@ import React from 'react';
 
 function About (){
     return(
-        <div>
-            <h2>About</h2>
+        <div className="about container">
+            <h2 className="m-auto">About</h2>
+            <hr></hr>
             <p id="about-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec mollis est. 
                 Etiam hendrerit elit elementum, dictum nisl at, euismod nisl. Sed ac malesuada magna, et fermentum nibh. 

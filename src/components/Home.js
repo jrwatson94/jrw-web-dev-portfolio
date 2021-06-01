@@ -3,7 +3,7 @@ import reidPic from '../assets/reid_toon_pic.PNG'
 
 function Home(){
     return(
-        <div className="container">
+        <div className="home container">
             <h1 id="name-tag" className="home-item">REID WATSON</h1>
             <hr className="home-rule"></hr>
             <img id="reid-toon-pic" className="home-item" src={reidPic} href="toon-image-reid"></img>
