@@ -16,6 +16,7 @@
   /* animation: slideBg 25s infinite 0s; */
   animation-timing-function: ease-in-out;
   background-image: url('./assets/poly-1.svg');
+  position: relative;
 }
 .container{
   display: grid;
@@ -108,4 +109,19 @@ hr {
 
 #about-text{
   padding-left: 1.5rem;
+}
+
+/* PROJECTS */
+
+.projects{
+  display: grid;
+}
+
+/* FOOTER */
+
+#footer{
+  position: absolute;
+  bottom: 0px;
+  left: 3rem;
+  right: 6rem;
 }
