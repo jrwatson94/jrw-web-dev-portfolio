@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css';
+import Nav from './components/Nav';
+import Home from './components/Home'
 
 function App(){
     return (
-        <h1>My Portfolio</h1>
+        <div className="main-container">
+            <Nav />
+            <Home />
+        </div>
     )
 }
 
