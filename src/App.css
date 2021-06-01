@@ -79,6 +79,7 @@ hr {
   height: 1px;
   margin-bottom: 3rem;
 }
+
 #name-tag{
   font-family: 'Josefin Sans', monospace;
   font-size: 85px;
@@ -93,6 +94,25 @@ hr {
   border: 1px solid rgb(255, 255, 255, 0.5);
   margin-top: 1.5rem;
   margin-bottom: 2rem;
+
+  animation: slideUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes slideUp {
+  0% {
+    margin-top: 100%;
+  }
+  95% {
+    margin-top: 1.75rem;
+  }
+  100% {
+    margin-top: 1.5rem;
+  }
 }
 
 #intro-text{
