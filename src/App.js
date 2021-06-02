@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect,useState} from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
@@ -11,7 +11,13 @@ import { BrowserRouter as Router, Route , Switch, withRouter} from 'react-router
 
 
 function App(){
+    const [pageLoaded, setPageLoaded] = useState(false);
+
+    useEffect(() => {
+        setPageLoaded(true);
+    }, [])
     return (
+        // <div className={pageLoaded ? "main-container" : "main-container fade-out"}>
         <div className="main-container">
             <div className="SLIDE_BG">
                 <Nav />

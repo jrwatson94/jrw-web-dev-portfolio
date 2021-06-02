@@ -1,9 +1,17 @@
-
+body{
+  background-color: black !important;
+}
 .main-container{
   font-family: 'Montserrat', sans-serif;
   height: 2000px;
   color: whitesmoke;
-  
+  opacity: 1;
+  transition: 3s opacity;
+  transition-delay: 3s;
+}
+.main-container.fade-out{
+  opacity: 0;
+  transition: none;
 }
 
 .SLIDE_BG{
@@ -13,7 +21,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  /* animation: slideBg 25s infinite 0s; */
+  /* animation: slideBg 13s infinite 0s; */
   animation-timing-function: ease-in-out;
   background-image: url('./assets/poly-1.svg');
   position: relative;
@@ -87,31 +95,23 @@ hr {
   margin-top: 3.5rem !important;
 }
 
+
 #reid-toon-pic{
   height: 15rem;
   border-radius: 100%;
-  box-shadow: 0px 3px 6px -2px #000000;
-  border: 1px solid rgb(255, 255, 255, 0.5);
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-
-  animation: slideUp;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
+  box-shadow: 0px 4px 7px -3px #000000;
+  border: 1px solid rgb(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
 }
 
 
-@keyframes slideUp {
+@keyframes fadeIn {
   0% {
-    margin-top: 100%;
+    opacity: 0;
   }
-  95% {
-    margin-top: 1.75rem;
-  }
+  
   100% {
-    margin-top: 1.5rem;
+    opacity: 1;
   }
 }
 
