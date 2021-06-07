@@ -21,8 +21,8 @@ function App(){
         <div className="main-container">
             <div className="SLIDE_BG">
                 <Nav />
-                <Home />
-                <Route exact path="/" render={() => <About />}/>
+                <Route exact path="/" render={() => <Home />}/>
+                <Route exact path="/home" render={() => <Home />}/>
                 <Route exact path="/about" render={() => <About />}/>
                 <Route exact path="/projects" render={() => <ProjectsContainer />}/>
                 <Route exact path="/resume" render={() => <Resume />}/>

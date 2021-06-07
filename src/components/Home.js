@@ -9,7 +9,7 @@ function Home(){
                 <hr className="home-rule"></hr>
             </div>
             <img id="reid-toon-pic" className="home-item" src={reidPic} href="toon-image-reid"></img>
-            <h3 className="home-item">Full-Stack Web Developer</h3>
+            <h3 className="home-item"><u>Full-Stack Web Developer</u></h3>
             <div id="intro-text" className="home-item">
                 <p>Welcome to my portfolio!</p>
                 <p>I am a software developer with a passion for problem-solving,<br></br>
