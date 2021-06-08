@@ -30,7 +30,6 @@ function App(){
     }
 
     const clickHandler = (ref) => {
-        console.log("clicked!")
         ref.current.scrollIntoView({
             behavior: 'smooth',
             block: 'start',
