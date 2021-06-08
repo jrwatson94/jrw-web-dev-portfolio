@@ -12,6 +12,13 @@ import Footer from './components/Footer';
 function App(){
     const [scrolled, setScrolled] = useState(false);
     const navRef = useRef(null);
+    
+    const home = useRef(null);
+    const about = useRef(null);
+    const projects = useRef(null);
+    const resume = useRef(null);
+    const contact = useRef(null);
+
 
     const scrollHandler = () => {
         const scrollTop = navRef.current.scrollTop;
@@ -22,20 +29,36 @@ function App(){
         }
     }
 
+    const clickHandler = (ref) => {
+        console.log("clicked!")
+        ref.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }
+
+
     return (
         <div className="main-container">
             <div className="SLIDE_BG">
-                <Nav scrolled={scrolled}/>
+                <Nav scrolled={scrolled} 
+                    clickHandler={clickHandler} 
+                    home={home}
+                    about={about}
+                    projects={projects}
+                    resume={resume}
+                    contact={contact}
+                />
                 <div 
                     className="components-container"
                     ref={navRef}
                     onScroll={scrollHandler}
                 >
-                    <Home />
-                    <About />
-                    <ProjectsContainer />
-                    <Resume />
-                    <Contact />
+                    <div ref={home}><Home /></div>
+                    <div ref={about}><About /></div>
+                    <div ref={projects}>< ProjectsContainer/></div>
+                    <div ref={resume}><Resume /></div>
+                    <div ref={contact}><Contact /></div>
                 </div>
                 <Footer />
             </div>
