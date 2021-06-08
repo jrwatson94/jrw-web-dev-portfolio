@@ -5,13 +5,6 @@ body{
   font-family: 'Montserrat', sans-serif;
   height: 1200px;
   color: whitesmoke;
-  opacity: 1;
-  transition: 3s opacity;
-  transition-delay: 3s;
-}
-.main-container.fade-out{
-  opacity: 0;
-  transition: none;
 }
 
 .SLIDE_BG{
@@ -29,6 +22,15 @@ body{
 .components-container{
   overflow-y: scroll;
   height: 1000px;
+}
+
+.components-sub-container{
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  background-color:rgb(255,255,255,0.1);
+  margin-top: 3rem;
+  animation: fadeIn 5s;
 }
 
 .container{
@@ -62,6 +64,11 @@ body{
   transition: background-color 1.5s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   height: 2.5rem;
+  animation: fadeIn 5s;
+  opacity: 1;
+}
+.fade-out{
+  opacity: 0;
 }
 .nav-a{
   color: white;
@@ -79,6 +86,9 @@ body{
 
 
  /* HOME */
+ .home {
+  animation: fadeIn 5s;
+ }
  .home-item{
   margin: auto;
 }
@@ -89,6 +99,7 @@ body{
   background-color:whitesmoke;
   height: 1px;
   margin-bottom: 0rem;
+  animation: fadeIn 3s;
 }
 hr{
   background-color: whitesmoke;
@@ -103,20 +114,43 @@ hr{
   letter-spacing: 0.125em;
   margin-top: 3rem;
   padding-left: 3rem;
+  
+  animation: popDown 2s;
+  animation-timing-function: ease-out;
+}
+
+
+@keyframes popDown {
+  0%{
+    margin-top: -12rem;
+    margin-bottom: 12rem;
+  }
+  100%{
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+  
+}
+
+.name-banner{
+  height: 8rem
 }
 
 
 #reid-toon-pic{
-  height: 18rem;
+  height: 19rem;
   border-radius: 100%;
   box-shadow: 0px 4px 7px -3px #000000;
   border: 1px solid rgb(255, 255, 255, 0.7);
-  margin-bottom: 4.5rem;
+  margin-bottom: 2.5rem;
 }
 
 
 @keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  70%{
     opacity: 0;
   }
   

@@ -48,16 +48,23 @@ function App(){
                     resume={resume}
                     contact={contact}
                 />
+                
                 <div 
                     className="components-container"
                     ref={navRef}
                     onScroll={scrollHandler}
                 >
-                    <div ref={home}><Home /></div>
-                    <div ref={about}><About /></div>
-                    <div ref={projects}>< ProjectsContainer/></div>
-                    <div ref={resume}><Resume /></div>
-                    <div ref={contact}><Contact /></div>
+                    <div className="name-banner">
+                        <h1 id="name-tag" className="home-item">REID WATSON</h1>
+                        <hr className="name-hr"></hr>
+                    </div>
+                    <div className="components-sub-container">
+                        <div ref={home}><Home /></div>
+                        <div ref={about}><About /></div>
+                        <div ref={projects}>< ProjectsContainer/></div>
+                        <div ref={resume}><Resume /></div>
+                        <div ref={contact}><Contact /></div>
+                    </div>
                 </div>
                 <Footer />
             </div>
