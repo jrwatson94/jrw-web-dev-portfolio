@@ -9,9 +9,11 @@ function Home(){
                 <img id="reid-toon-pic" className="home-item" src={reidPic} href="toon-image-reid"></img>
                 <h2 className="home-item"><u>Full-Stack Web Developer</u></h2>
                 <div id="intro-text" className="home-item">
-                    <p>Welcome to my portfolio!</p>
-                    <p>I am a software developer with a passion for problem-solving,<br></br>
+                    <p>Hi there, my name's Reid!</p>
+                    <br></br>
+                    <p>I'm a software developer with a passion for problem-solving,<br></br>
                     creativity, and sleek, efficient design.</p>
+                    <br></br>
                     <p>Come see my work below!</p>
                 </div>
             </div>

@@ -22,13 +22,16 @@ body{
 .components-container{
   overflow-y: scroll;
   height: 1000px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .components-sub-container{
   width: 90%;
   margin: auto;
   border-radius: 15px;
-  background-color:rgb(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 3px 6px 0px #000000;
   margin-top: 3rem;
   animation: fadeIn 5s;
 }
@@ -160,15 +163,16 @@ hr{
 }
 
 #intro-text{
-  margin-top: 3.5rem ;
-  font-size: 23px;
+  margin-top: 4.5rem ;
+  font-size: 26px;
 }
 
 /* ABOUT */
 
-#about-text{
+.about-text{
   padding-left: 1.5rem;
 }
+
 
 /* PROJECTS */
 
