@@ -6,8 +6,8 @@ function Home(){
         <>
             
             <div className="home container">
-                <img id="reid-toon-pic" className="home-item" src={reidPic} href="toon-image-reid"></img>
                 <h2 className="home-item"><u>Full-Stack Web Developer</u></h2>
+                <img id="reid-toon-pic" className="home-item" src={reidPic} href="toon-image-reid"></img>
                 <div id="intro-text" className="home-item">
                     <p>Hi there, my name's Reid!</p>
                     <br></br>
@@ -15,6 +15,7 @@ function Home(){
                     creativity, and sleek, efficient design.</p>
                     <br></br>
                     <p>Come see my work below!</p>
+                    <div id="ellipses" className="text-center"><h2>.  .  .</h2></div>
                 </div>
             </div>
         </>
