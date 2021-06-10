@@ -4,7 +4,6 @@ import reidPic from '../assets/reid_toon_pic.PNG'
 function Home(){
     return(
         <>
-            
             <div className="home container">
                 <h2 className="home-item"><u>Full-Stack Web Developer</u></h2>
                 <img id="reid-toon-pic" className="home-item" src={reidPic} href="toon-image-reid"></img>
