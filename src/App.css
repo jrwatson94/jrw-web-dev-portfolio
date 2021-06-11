@@ -220,6 +220,18 @@ hr{
   display: grid;
 }
 
+
+/* CONTACT */
+.contact-form{
+  margin: auto;
+  width: 35rem;
+  margin-bottom: 3rem;
+}
+
+#contact-title{
+  width: 52rem;
+}
+
 /* FOOTER */
 
 #footer{

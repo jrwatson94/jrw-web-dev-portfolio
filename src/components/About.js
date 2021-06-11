@@ -19,8 +19,8 @@ import reid from '../assets/reid.jpg'
 
 function About (){
     return(
-        <div className="about container">
-            <h2 className="m-auto title">About</h2>
+        <div className="container">
+            <h2 className="title">About</h2>
             <hr></hr>
             <div>
                 <div className="text-center">
