@@ -66,11 +66,15 @@ body{
 
 /* NAVBAR */
 .navbar{
-  transition: background-color 1.5s;
+  transition: background-color 0.9s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   height: 2.5rem;
   animation: fadeIn 5s;
   opacity: 1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .fade-out{
   opacity: 0;
@@ -84,8 +88,7 @@ body{
   text-decoration: none;
 }
 .scrolled {
-  background-color: rgba(146, 184, 255, 0.1);
-  -webkit-box-shadow: 0px 7px 6px -3px #000000; 
+  background-color: rgba(0, 32, 56);
   box-shadow: 0px 3px 3px -1px #000000;
 }
 

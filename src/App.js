@@ -22,7 +22,7 @@ function App(){
 
     const scrollHandler = () => {
         const scrollTop = navRef.current.scrollTop;
-        if(scrollTop < 60){
+        if(scrollTop < 10){
             setScrolled(false);
         }else{
             setScrolled(true);
