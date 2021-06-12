@@ -5,7 +5,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills'
 import ProjectsContainer from './containers/ProjectsContainer';
-import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -47,7 +46,7 @@ function App(){
                     home={home}
                     about={about}
                     projects={projects}
-                    resume={resume}
+                    skills={skills}
                     contact={contact}
                 />
                 
