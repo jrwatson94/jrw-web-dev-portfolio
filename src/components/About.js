@@ -24,7 +24,9 @@ function About (){
             <hr></hr>
             <div>
                 <div className="text-center">
-                    <img className="reid-img" src={reid}></img>
+                    <div className="reid-img-outline justify-content-center">
+                        <img className="reid-img" src={reid}></img>
+                    </div>
                 </div>
                 <p className="about-text">
                     <br></br>

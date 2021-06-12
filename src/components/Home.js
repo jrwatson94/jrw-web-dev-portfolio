@@ -14,7 +14,6 @@ function Home(){
                     creativity, and sleek, efficient design.</p>
                     <br></br>
                     <p>Come see my work below!</p>
-                    <div id="ellipses" className="text-center"><h2>.  .  .</h2></div>
                 </div>
             </div>
         </>
