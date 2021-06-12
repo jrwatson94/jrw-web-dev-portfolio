@@ -31,7 +31,8 @@ function Project(props){
                             <iframe 
                                 className="card-img align-self-center"
                                 byline="0"
-                                src={props.url}frameborder="0" 
+                                src={props.url}
+                                frameborder="0" 
                                 allow="autoplay; fullscreen" 
                                 allowfullscreen>
                             </iframe>

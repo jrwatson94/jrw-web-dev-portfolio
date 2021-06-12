@@ -76,6 +76,9 @@ body{
   width: 100%;
   z-index: 100;
 }
+.navbar-nav{
+  width: 100%;
+}
 .fade-out{
   opacity: 0;
 }
@@ -203,23 +206,55 @@ hr{
   margin: auto;
 }
 
-.code-logo{
-  height: 6rem;
-  width: 6rem;
-  border-radius: 5px;
-}
+
 #postg{
   height: 6.5rem;
   width: 6.5rem;
 }
-.fab{
-  font-size: 3rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+.fab, .fas{
+  font-size: 1.7rem;
+  padding-top: 0.4rem;
+  margin-left: 0.5rem;
+  color: rgb(255,255,255,0.8);
+  transition: color 0.2s;
 }
+
+.fab:hover, .fas:hover{
+  color: white;
+}
+
 #ellipses{
   margin-top: 2rem;
   padding-bottom: 3rem;
+}
+
+/* SKILLS */
+.skill-hover{
+  background-color: rgb(255,255,255, 0.5);
+}
+
+.code-logo{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 5px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.code-overlay{
+  height: 6rem;
+  width: 6rem;
+  background-color: rgb(0,0,0,0.6);
+  border-radius: 5px;
+
+}
+
+.overlay-text{
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace !important;
 }
 
 /* PROJECTS */
@@ -279,6 +314,12 @@ iframe{
   box-shadow: 0px 2px 4px -2px #000000;
 }
 
+/* RESUME */
+#resume{
+  height: 60rem;
+  width: 50rem;
+}
+
 /* CONTACT */
 .contact-form{
   margin: auto;
@@ -297,7 +338,7 @@ iframe{
 
 /* FOOTER */
 #footer{
-  bottom: 0px;
-  left: 3rem;
-  right: 6rem;
+  justify-content: center;
+  display: grid;
+  padding-top: 9rem;
 }

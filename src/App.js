@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
+import Skills from './components/Skills'
 import ProjectsContainer from './containers/ProjectsContainer';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
@@ -15,6 +16,7 @@ function App(){
     
     const home = useRef(null);
     const about = useRef(null);
+    const skills = useRef(null);
     const projects = useRef(null);
     const resume = useRef(null);
     const contact = useRef(null);
@@ -61,8 +63,9 @@ function App(){
                     <div className="components-sub-container">
                         <div ref={home}><Home /></div>
                         <div ref={about}><About /></div>
+                        <div ref={skills}><Skills /></div>
                         <div ref={projects}>< ProjectsContainer/></div>
-                        <div ref={resume}><Resume /></div>
+                        {/* <div ref={resume}><Resume /></div> */}
                         <div ref={contact}><Contact /></div>
                     </div>
                 </div>
