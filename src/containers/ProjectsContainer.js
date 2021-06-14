@@ -16,12 +16,15 @@ function ProjectsContainer(){
                             name={"Ascent"} 
                             logo={logo}
                             githubLink={""} 
-                            text={
-                                <div>
-                                    <p className="p-4">
+                            intro={
+                                <p className="p-4">
                                         A rock climbing exploration website, where users can search for, favorite, and 
                                         learn about a vast number of rock climbing sites throughout the United States
-                                    </p>
+                                </p>
+                            }
+                            text={
+                                <div>
+                                    
                                     <ul>
                                         <li>
                                             Developed with Ruby on Rails, Postgres, Javascript and React/Redux
@@ -46,11 +49,14 @@ function ProjectsContainer(){
                             name={"BlackJackJS"} 
                             logo={ace}
                             githubLink={""} 
+                            intro={
+                                <p className="p-4">
+                                        A fun, engaging digital blackjack game with card animations and gameplay statistics tracking 
+                                </p>
+                            }
                             text={
                                 <div>
-                                    <p className="p-4">
-                                        A fun, engaging digital blackjack game with card animations and gameplay statistics tracking 
-                                    </p>
+                                    
                                     <ul>
                                         <li>
                                             Implemented game logic for hitting, staying, busting over 21, automated dealer hit below 17, and variable Ace card value
@@ -77,12 +83,15 @@ function ProjectsContainer(){
                             name={"BackLog"} 
                             logo={game}
                             githubLink={""} 
-                            text={
-                                <div >
-                                    <p className="p-4">
+                            intro={
+                                <p className="p-4">
                                         A video game cataloging app used to search for, 
                                         like, and review various video games and console systems
-                                    </p>
+                                </p>
+                            }
+                            text={
+                                <div >
+                                    
                                     <ul>
                                         <li>
                                             Seeded rails backend with data from the RAWG video game API

@@ -145,6 +145,8 @@ hr{
 }
 
 
+
+
 .reid-toon-pic{
   height: 12rem;
   border-radius: 100%;
@@ -289,9 +291,13 @@ hr{
   width: 47rem;
 }
 .card{
-  width: 100%;
+  width: 85%;
+  margin: auto;
   background-color: rgb(255, 255, 255, 0.3);
   box-shadow: 0px 2px 4px -2px rgb(0,0,0);
+}
+.card-img{
+  border-radius: 10px;
 }
 .card-title{
   font-weight: bold;
@@ -326,13 +332,9 @@ iframe{
   padding: 1rem;
 }
 .logo-div{
-  height: 7rem;
-  width: 7rem;
-  /* border: 1px solid white; */
-  border-radius: 100%;
-  background-color: rgb(255,255,255, 0.3);
-  margin-top: 2rem !important;
-  box-shadow: 0px 2px 4px -2px #000000;
+  width: 12rem;
+  margin-top: 4rem !important;
+
 }
 
 /* RESUME */

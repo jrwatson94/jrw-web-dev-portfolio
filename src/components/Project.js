@@ -11,17 +11,16 @@ function Project(props){
     return(
         <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className="card mb-3">
             <div className="row no-gutters">
-                <div className="col-12">
+                <div className="col-5">
                     <div className="logo-div m-auto">
-                        <img src={props.logo} className="card-img logo p-3"></img>
+                        <img src={props.logo} className="card-img"></img>
                     </div>
                 </div>
-                
-            </div>
-            <div className="row">
-                <div className="col-12 text-center">
-                    <h2 className="card-title">{props.name}</h2>
+                <div className="col-7 text-center">
+                    <h2 className="card-title mt-5 mb-0">{props.name}</h2>
+                    {props.intro}
                 </div>
+                
             </div>
           
             <div className="row">
