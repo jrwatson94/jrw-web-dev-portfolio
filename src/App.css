@@ -15,7 +15,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  animation: slideBg 18s infinite 0s;
+  /* animation: slideBg 18s infinite 0s; */
   background-image: url('./assets/poly-1.svg');
   position: relative;
 }
@@ -46,7 +46,7 @@ body{
   margin-bottom: 3rem;
 }
 
-@keyframes slideBg{
+/* @keyframes slideBg{
   0% {
     background-image: url('./assets/poly-1.svg');
   }
@@ -62,7 +62,7 @@ body{
   100% {
     background-image: url('./assets/poly-1.svg');
   }
-}
+} */
 
 /* NAVBAR */
 .navbar{
