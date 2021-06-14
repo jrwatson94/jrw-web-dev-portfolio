@@ -50,11 +50,14 @@ body{
   0% {
     background-image: url('./assets/poly-1.svg');
   }
-  33% {
+  25% {
     background-image: url('./assets/poly-2.svg');
   }
-  66% {
+  50% {
     background-image: url('./assets/poly-3.svg');
+  }
+  75%{
+    background-image: url('./assets/poly-4.svg');
   }
   100% {
     background-image: url('./assets/poly-1.svg');
