@@ -17,7 +17,6 @@ function App(){
     const about = useRef(null);
     const skills = useRef(null);
     const projects = useRef(null);
-    const resume = useRef(null);
     const contact = useRef(null);
 
 
@@ -64,7 +63,6 @@ function App(){
                         <div ref={about}><About /></div>
                         <div ref={skills}><Skills /></div>
                         <div ref={projects}>< ProjectsContainer/></div>
-                        {/* <div ref={resume}><Resume /></div> */}
                         <div ref={contact}><Contact /></div>
                     </div>
                 </div>

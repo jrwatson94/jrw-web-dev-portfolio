@@ -15,7 +15,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  /* animation: slideBg 33s infinite 0s; */
+  /* animation: slideBg 18s infinite 0s; */
   background-image: url('./assets/poly-1.svg');
   position: relative;
 }
@@ -27,11 +27,11 @@ body{
 }
 
 .components-sub-container{
-  width: 90%;
+  width: 80%;
   margin: auto;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, .15);  
-  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, .10);  
+  backdrop-filter: blur(5px);
   box-shadow: 0px 3px 6px 0px #000000;
   margin-top: 6rem;
   animation: fadeIn 5s;
@@ -46,23 +46,20 @@ body{
   margin-bottom: 3rem;
 }
 
-@keyframes slideBg{
+/* @keyframes slideBg{
   0% {
     background-image: url('./assets/poly-1.svg');
   }
-  25% {
+  33% {
     background-image: url('./assets/poly-2.svg');
   }
-  50% {
+  66% {
     background-image: url('./assets/poly-3.svg');
-  }
-  75% {
-    background-image: url('./assets/poly-4.svg');
   }
   100% {
     background-image: url('./assets/poly-1.svg');
   }
-}
+} */
 
 /* NAVBAR */
 .navbar{
@@ -148,12 +145,42 @@ hr{
 }
 
 
-#reid-toon-pic{
-  height: 19rem;
+.reid-toon-pic{
+  height: 12rem;
   border-radius: 100%;
   box-shadow: 0px 4px 7px -3px #000000;
   border: 1px solid rgb(255, 255, 255, 0.7);
   margin-top: 2.5rem;
+}
+.flip-card {
+  background-color: transparent;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
 
@@ -172,7 +199,7 @@ hr{
 
 #intro-text{
   margin-top: 4.5rem ;
-  font-size: 26px;
+  font-size: 21px;
 }
 
 
@@ -298,15 +325,9 @@ iframe{
   height: 17rem;
   padding: 1rem;
 }
-.logo{
-  height: 12rem;
-  width: 12rem;
-  margin-left: 2rem;
-  margin-top: 1rem;
-}
 .logo-div{
-  height: 15rem;
-  width: 15rem;
+  height: 7rem;
+  width: 7rem;
   /* border: 1px solid white; */
   border-radius: 100%;
   background-color: rgb(255,255,255, 0.3);

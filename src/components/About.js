@@ -21,7 +21,7 @@ function About (){
                 </div>
                 <p className="about-text">
                     <br></br>
-                    My journey as a software developer started at the Flatiron School Software Engineering Bootcamp, 
+                    My journey as a software developer started at the <a target="_blank" href="https://flatironschool.com/campus-and-online-coding-bootcamp/">Flatiron School Software Engineering Bootcamp</a>, 
                     a rigorous 15-week program where I learned the core foundation of my technical skills. 
                     At Flatiron, I specialized in Ruby on Rails, Javascript, and React.js.
                     <br></br>
@@ -30,7 +30,7 @@ function About (){
                     Shakespeare company in Upper Manhattan, and performed in various venues throughout the city. Although computer 
                     programming and Shakespeare may at first seem like disparate, unrelated experiences, acting has actually taught
                     me so much about being a developer! The communication and collaboration skills, and the deep sense of empathy 
-                    I learned in the theatre have a great impact on how I concieve of and implement web applications.
+                    I learned in the theatre have a great impact on how I conceive of and implement web applications.
                     <br></br>
                     <br></br>
                     I am passionate about coding because it allows me to combine my two passions, creativity and technology.

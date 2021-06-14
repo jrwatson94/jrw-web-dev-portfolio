@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 function Nav(props){
-    const [pageLoaded, setPageLoaded] = useState(false);
+    const [pageLoaded, setPageLoaded] = useState(false);    
 
     useEffect(() => {
         setPageLoaded(true);
@@ -18,8 +18,8 @@ function Nav(props){
             <div className="navbar-nav">
                 <li className="nav-link"><a onClick={() => props.clickHandler(props.home)} className="nav-a">home</a></li>
                 <li className="nav-link"><a onClick={() => props.clickHandler(props.about)}className="nav-a" >about</a></li>
-                <li className="nav-link"><a onClick={() => props.clickHandler(props.projects)}className="nav-a" >projects</a></li>
                 <li className="nav-link"><a onClick={() => props.clickHandler(props.skills)}className="nav-a" >skills</a></li>
+                <li className="nav-link"><a onClick={() => props.clickHandler(props.projects)}className="nav-a" >projects</a></li>
                 <li className="nav-link mr-auto"><a onClick={() => props.clickHandler(props.contact)}className="nav-a" >contact</a></li>
                 <li className="">
                     <a target="_blank" href="https://github.com/jrwatson94"><i title="Github" className="fab fa-github"></i></a>
