@@ -320,9 +320,6 @@ hr{
   color: rgb(0,0,0,0.6);
   transition: color 0.3s;
 }
-.arrow-div{
-  visibility: hidden;
-}
 .visible{
   visibility: visible;
 }
