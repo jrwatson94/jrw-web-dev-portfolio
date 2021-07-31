@@ -89,6 +89,7 @@ body{
   color: white !important;
   border-bottom: 2px solid white;
   text-decoration: none;
+  cursor: pointer;
 }
 .scrolled {
   background-color: rgba(0, 32, 56);
@@ -146,9 +147,6 @@ hr{
 .name-banner{
   height: 8rem
 }
-
-
-
 
 .reid-toon-pic{
   height: 12rem;
