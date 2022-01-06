@@ -1,8 +1,10 @@
 import React from 'react';
-import Project from '../components/Project'
-import logo from '../assets/logo.png'
-import ace from '../assets/ace.png'
-import game from '../assets/game.png'
+import Project from '../components/Project';
+import logo from '../assets/logo.png';
+import ace from '../assets/ace.png';
+import game from '../assets/game.png';
+import skytop from '../assets/wing.png';
+import go from '../assets/go.jpg';
 
 function ProjectsContainer(){
     return(
@@ -11,6 +13,79 @@ function ProjectsContainer(){
             <hr></hr>
             <div className="projects">
                 <div className="row">
+                <div className="col-12">
+                    <Project 
+                            name={"Skytop Online"} 
+                            logo={skytop}
+                            githubLink={""} 
+                            intro={
+                                <p className="p-4">
+                                        A digital news portal publishing weekly content about 
+                                        corporate social responsibility, investment management, 
+                                        and cyber security 
+                                </p>
+                            }
+                            text={
+                                <div> 
+                                    <ul>
+                                        <li>
+                                            Developed using a WordPress headless CMS backend architecture, rendered to a decoupled frontend built with React, via Wordpress REST API
+                                        </li>
+                                        <li>
+                                            Created dynamic web pages displaying digital interviews, articles, information about authors, as well as events pages advertising upcoming conferences about related topics
+                                        </li>
+                                        <li>
+                                            Implemented fully functional eCommerce capability powered with WooCommerce, which allows users to purchase tickets and register for various Skytop events
+                                        </li>
+                                        <li>
+                                            Built every aspect of the application entirely by myself, deployed via Digital Ocean
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            } 
+                            url={""}
+                            website_link={"https://skytopstrategies.com/"} 
+                        />
+                    </div>
+                </div>
+                <div className="row">
+                <div className="col-12">
+                    <Project 
+                            name={"Gotham Oracle"} 
+                            logo={go}
+                            githubLink={""} 
+                            intro={
+                                <p className="p-4">
+                                        A New York City events search engine, utilizing a 
+                                        suite of web scrapers to find events happening 
+                                        in New York City, which users can filter based 
+                                        on their preferences
+                                </p>
+                            }
+                            text={
+                                <div> 
+                                    <ul>
+                                        <li>
+                                            Built an interactive map feature using Mapbox, which enables users to filter events based on their preferred borough, or even individual neighborhood
+                                        </li>
+                                        <li>
+                                            Created the Contact Us page, and contributed to various other frontend components, including the FAQ, user registration and landing pages
+                                        </li>
+                                        <li>
+                                            Implemented site-wide mobile responsiveness to ensure compatibility with desktop, laptop, tablet, and mobile screen sizes
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            } 
+                            url={""}
+                            website_link={"https://gothamoracle.com/"} 
+                        />
+                    </div>
+                </div>
+                <div className="row">
+                    
                     <div className="col-12">
                         <Project 
                             name={"Ascent"} 

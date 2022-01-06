@@ -332,7 +332,11 @@ iframe{
 .logo-div{
   width: 12rem;
   margin-top: 4rem !important;
+}
 
+.website-link{
+  color: white;
+  text-decoration: underline;
 }
 
 /* RESUME */

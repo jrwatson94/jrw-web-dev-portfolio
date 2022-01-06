@@ -27,14 +27,23 @@ function Project(props){
                 <div className="col-12">
                         <div className="collapse" id={props.name}>
                             {props.text}
-                            <iframe 
-                                className="card-img align-self-center"
-                                byline="0"
-                                src={props.url}
-                                frameborder="0" 
-                                allow="autoplay; fullscreen" 
-                                allowfullscreen>
-                            </iframe>
+                            {props.website_link ? 
+                                <div className="text-center">
+                                    <a href={props.website_link} target="_blank" rel="noreferrer" className="website-link">
+                                        <h5>See Live Website</h5>
+                                    </a>
+                                </div>
+                            
+                            :
+                                <iframe 
+                                    className="card-img align-self-center"
+                                    byline="0"
+                                    src={props.url}
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen" 
+                                    allowfullscreen>
+                                </iframe>
+                            }
                         </div>
                 </div>
             </div>
